@@ -1,0 +1,175 @@
+{
+	"React Component": {
+		"prefix": "rcomp",
+		"body": [
+			"import Roact from '@rbxts/roact';",
+			"",
+			"interface Props {",
+			"\t$1",
+			"}",
+			"",
+			"export function ${TM_FILENAME_BASE}(props: Props) {",
+			"\treturn (",
+			"\t\t<frame>",
+			"\t\t\t$0",
+			"\t\t</frame>",
+			"\t);",
+			"}"
+		],
+		"description": "Create a new React component"
+	},
+	"React Hooked Component": {
+		"prefix": "rhcomp",
+		"body": [
+			"import Roact from '@rbxts/roact';",
+			"import { useEffect, useState } from '@rbxts/roact-hooked';",
+			"",
+			"interface Props {",
+			"\t$1",
+			"}",
+			"",
+			"export function ${TM_FILENAME_BASE}(props: Props) {",
+			"\tconst [state, setState] = useState($2);",
+			"",
+			"\tuseEffect(() => {",
+			"\t\t$3",
+			"\t}, []);",
+			"",
+			"\treturn (",
+			"\t\t<frame>",
+			"\t\t\t$0",
+			"\t\t</frame>",
+			"\t);",
+			"}"
+		],
+		"description": "Create a new React component with hooks"
+	},
+	"useState": {
+		"prefix": "ustate",
+		"body": [
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2);"
+		],
+		"description": "React useState hook"
+	},
+	"useEffect": {
+		"prefix": "ueffect",
+		"body": [
+			"useEffect(() => {",
+			"\t$1",
+			"}, [$2]);"
+		],
+		"description": "React useEffect hook"
+	},
+	"useContext": {
+		"prefix": "ucontext",
+		"body": [
+			"const ${1:context} = useContext($2);"
+		],
+		"description": "React useContext hook"
+	}
+,
+	"Function Component": {
+		"prefix": "rfcomp",
+		"body": [
+			"import React, { useState } from \"@rbxts/react\";",
+			"",
+			"interface ${1:Component}Props {",
+			"\t${2:initialCount}: number;",
+			"}",
+			"",
+			"export function ${1:Component}({ ${2:initialCount} }: ${1:Component}Props) {",
+			"\tconst [count, setCount] = useState(${2:initialCount});",
+			"",
+			"\treturn (",
+			"\t\t<textbutton",
+			"\t\t\tText={`Count: ${count}`}",
+			"\t\t\tAnchorPoint={new Vector2(0.5, 0.5)}",
+			"\t\t\tSize={new UDim2(0, 100, 0, 50)}",
+			"\t\t\tPosition={new UDim2(0.5, 0, 0.5, 0)}",
+			"\t\t\tEvent={{",
+			"\t\t\t\tActivated: () => setCount(count + 1),",
+			"\t\t\t}}",
+			"\t\t/>",
+			"\t);",
+			"}"
+		],
+		"description": "Create a new React function component"
+	},
+	"Class Component": {
+		"prefix": "rccomp",
+		"body": [
+			"import React, { Component, ReactComponent } from \"@rbxts/react\";",
+			"",
+			"interface ${1:Component}Props {",
+			"\t${2:initialCount}: number;",
+			"}",
+			"",
+			"interface ${1:Component}State {",
+			"\tcount: number;",
+			"}",
+			"",
+			"@ReactComponent",
+			"export class ${1:Component} extends Component<${1:Component}Props, ${1:Component}State> {",
+			"\tstate: ${1:Component}State = {",
+			"\t\tcount: this.props.${2:initialCount},",
+			"\t};",
+			"",
+			"\trender() {",
+			"\t\treturn (",
+			"\t\t\t<textbutton",
+			"\t\t\t\tText={`Count: ${this.state.count}`}",
+			"\t\t\t\tAnchorPoint={new Vector2(0.5, 0.5)}",
+			"\t\t\t\tSize={new UDim2(0, 100, 0, 50)}",
+			"\t\t\t\tPosition={new UDim2(0.5, 0, 0.5, 0)}",
+			"\t\t\t\tEvent={{",
+			"\t\t\t\t\tActivated: () => this.setState({ count: this.state.count + 1 }),",
+			"\t\t\t\t}}",
+			"\t\t\t/>",
+			"\t\t);",
+			"\t}",
+			"}"
+		],
+		"description": "Create a new React class component"
+	},
+	"Error Boundary": {
+		"prefix": "rerror",
+		"body": [
+			"import React, { Component, ErrorInfo, ReactComponent } from \"@rbxts/react\";",
+			"",
+			"interface ErrorBoundaryProps {",
+			"\tfallback: (error: unknown) => React.Element;",
+			"}",
+			"",
+			"interface ErrorBoundaryState {",
+			"\thasError: boolean;",
+			"\tmessage?: unknown;",
+			"}",
+			"",
+			"@ReactComponent",
+			"export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {",
+			"\tstate: ErrorBoundaryState = {",
+			"\t\thasError: false,",
+			"\t};",
+			"",
+			"\tcomponentDidCatch(message: unknown, info: ErrorInfo) {",
+			"\t\twarn(message, info.componentStack);",
+			"",
+			"\t\tthis.setState({",
+			"\t\t\thasError: true,",
+			"\t\t\tmessage: `${message} ${info.componentStack}`,",
+			"\t\t});",
+			"\t}",
+			"",
+			"\trender() {",
+			"\t\tif (this.state.hasError) {",
+			"\t\t\treturn this.props.fallback(this.state.message);",
+			"\t\t} else {",
+			"\t\t\treturn this.props.children;",
+			"\t\t}",
+			"\t}",
+			"}"
+		],
+		"description": "Create a new React error boundary component"
+	}
+}
+

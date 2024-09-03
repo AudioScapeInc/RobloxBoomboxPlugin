@@ -1,0 +1,29 @@
+{
+  "name": "songsearch-plugin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rbxts/compiler-types": "^2.3.0-types.2",
+    "@rbxts/types": "^1.0.804",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "@typescript-eslint/parser": "^8.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-roblox-ts": "^0.0.36",
+    "prettier": "^3.3.3",
+    "roblox-ts": "^2.3.0-dev-6d64be9",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "@rbxts/react": "^0.4.0"
+  }
+}
