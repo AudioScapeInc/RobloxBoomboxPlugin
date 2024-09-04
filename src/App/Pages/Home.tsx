@@ -5,8 +5,6 @@ const Pages = script.Parent as Folder;
 const App = Pages.Parent as Folder;
 const Core = App.WaitForChild("Core") as Folder;
 
-print(App, Core);
-
 const AudioscapeBoomBox = Core.WaitForChild("AudioscapeBoomBox") as ModuleScript;
 
 interface HomeProps {
@@ -15,12 +13,14 @@ interface HomeProps {
 
 interface HomeState {
 	count: number;
+	buttonText: string;
 }
 
 @ReactComponent
 export class Home extends Component<HomeProps, HomeState> {
 	state: HomeState = {
 		count: this.props.initialCount,
+		buttonText: "Add The AudioScape.ai Boombox",
 	};
 
 	render() {
@@ -33,7 +33,7 @@ export class Home extends Component<HomeProps, HomeState> {
 						Enum.FontStyle.Normal,
 					)
 				}
-				Text="Add The AudioScape.ai Boombox"
+				Text={this.state.buttonText}
 				TextColor3={Color3.fromRGB(255, 255, 255)}
 				TextScaled={true}
 				TextSize={14}
@@ -48,6 +48,11 @@ export class Home extends Component<HomeProps, HomeState> {
 					Activated: () => {
 						let Boombox = ServerScriptService.FindFirstChild("AudioscapeBoomBox");
 						if (Boombox) {
+							this.setState({ buttonText: "Find the AudioscapeBoomBox in ServerScriptService!" });
+							task.delay(3, () => {
+								this.setState({ buttonText: "Add The AudioScape.ai Boombox" });
+							});
+
 							return;
 						}
 
@@ -58,6 +63,11 @@ export class Home extends Component<HomeProps, HomeState> {
 						if (ServerScript) {
 							ServerScript.Enabled = true;
 						}
+
+						this.setState({ buttonText: "Find the AudioscapeBoomBox in ServerScriptService!" });
+						task.delay(3, () => {
+							this.setState({ buttonText: "Add The AudioScape.ai Boombox" });
+						});
 					},
 				}}
 			>
