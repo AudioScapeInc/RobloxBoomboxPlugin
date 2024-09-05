@@ -20,7 +20,7 @@ This guide will walk you through the installation and setup of the Audioscape AI
 - Once the plugin is open, add the Audioscape AI Boombox to your game. It should appear in your workspace.
 
 ### 4. Configure API Key (Optional)
-- If you have an API key, input it in the provided field. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key.
+- If you have an API key, input it in the provided field under `AudioscapeBoomBox.Developer_API_Key`. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key.
 
 ### 5. Publish Your Game (Optional, If not Published Already)
 - Go to **File** > **Publish to Roblox**.
