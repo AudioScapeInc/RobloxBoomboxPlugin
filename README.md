@@ -1,23 +1,40 @@
-# AudioScape.ai Boombox Plugin
+# Audioscape AI Boombox Installation Guide
 
-## Overview
+This guide will walk you through the installation and setup of the Audioscape AI Boombox plugin within Roblox Studio.
 
-The AudioScape.ai Boombox is a powerful plugin for Roblox that brings a Spotify-like experience to your games using music from the Roblox toolbox licensed from AMP. This plugin allows you to easily add and manage a vast library of audio content.
+## Prerequisites
+- Roblox Studio installed
+- [Audioscape.ai Boombox](https://www.roblox.com/games/16282022243/AudioScape-ai-Boombox-Plugin). plugin installed
 
-## Features
+## Steps
 
--   Easy integration with Roblox games
--   Seamless user interface
--   Dynamic audio management
+### 1. Open Roblox Studio
+- Launch Roblox Studio.
+- Create a new game or open an existing one. For this example, you can start with a basic Baseplate template.
 
-## Installation
+### 2. Access the Plugin
+- After opening the game, navigate to the plugins section where the Audioscape AI Boombox plugin is installed.
+- Open the plugin by clicking on it.
 
-1. Get the plugin from the [Roblox Asset Store](https://www.roblox.com/games/16282022243/AudioScape-ai-Boombox-Plugin).
-2. Open the plug-in in Roblox Studio.
+### 3. Add Audioscape Boombox to Your Game
+- Once the plugin is open, add the Audioscape AI Boombox to your game. It should appear in your workspace.
 
-## Usage
+### 4. Configure API Key (Optional)
+- If you have an API key, input it in the provided field. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key.
 
-1. Click the "Add The AudioScape.ai Boombox" button to install the boombox.
-2. The boombox will be installed to `ServerScriptService`.
-3. Set the `Developer_API_Key` in `ServerScriptService/AudioscapeBoomBox/Developer_API_Key`.
-4. Enjoy your AudioScape.ai Boombox!
+### 5. Publish Your Game (Optional, If not Published Already)
+- Go to **File** > **Publish to Roblox**.
+- Name your game
+- Wait for the game to publish successfully.
+
+### 6. Adjust Game Settings
+- After publishing, navigate to the **Home** tab in the top menu bar.
+- Click **Game Settings**.
+- In **Game Settings**, go to **Security** and do the following:
+  - Enable **Allow HTTP Requests**.
+  - Enable **Allow Studio Access to API Services**.
+
+### 7. Ready to Play!
+- Once the boombox loads up, you're all set!
+
+That's all there is to it—enjoy your new Audioscape experience!
