@@ -48,7 +48,7 @@ Follow this guide to set up your own HTTP secret to integrate the Audioscape Boo
 ## Steps
 
 Developer Api Secret:
-`AeQ4lrVjX31Giir84cipc6ZXD0FXtnMQagqN7WqS`
+`mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4`
 
 https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 
@@ -72,7 +72,7 @@ https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 
 ### 5. Add the Secret Value
 - If you already have an API key from Audioscape.ai, enter that as the secret value.
-- If you do not have an API key, you can use this `AeQ4lrVjX31Giir84cipc6ZXD0FXtnMQagqN7WqS` default rate-limited secret provided by Audioscape.ai. 
+- If you do not have an API key, you can use this `mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4` default rate-limited secret provided by Audioscape.ai. 
 
 ### 6. Finalize the Setup
 - After entering the secret name and value, click **Create** to save the secret.
