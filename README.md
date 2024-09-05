@@ -18,12 +18,15 @@ https://github.com/user-attachments/assets/acc032da-5d93-4be7-852c-81af32149a34
 ### 2. Access the Plugin
 - After opening the game, navigate to the plugins section where the Audioscape AI Boombox plugin is installed.
 - Open the plugin by clicking on it.
+![Screenshot 2024-09-05 at 2 35 34 PM](https://github.com/user-attachments/assets/686752a4-37df-4ec7-90d8-e8bfc3afce49)
 
 ### 3. Add Audioscape Boombox to Your Game
 - Once the plugin is open, add the Audioscape AI Boombox to your game. It should appear in your workspace.
+![Screenshot 2024-09-05 at 2 29 15 PM](https://github.com/user-attachments/assets/68a57060-9560-458f-9109-43cadc5a5bc8)
+
 
 ### 4. Configure API Key (Optional)
-- If you have an API key, input it in the provided field under `AudioscapeBoomBox.Developer_API_Key`. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key.
+- If you have an unique developer API key, input it in the provided field under `AudioscapeBoomBox.Developer_API_Key`. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key.
 
 ### 5. Publish Your Game (Optional, If not Published Already)
 - Go to **File** > **Publish to Roblox**.
@@ -52,7 +55,6 @@ Developer Api Secret:
 
 https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 
-
 ### 1. Open Your Game in Roblox
 - Go to the Roblox **Create** page and select the place where you want to add the Audioscape Boombox.
 - Click the three dots (`...`) in the top-right corner of the game's tile and select **Configure this Experience**.
@@ -71,7 +73,7 @@ https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 - The name must be exactly as written above. If there are any discrepancies, the Boombox will not work.
 
 ### 5. Add the Secret Value
-- If you already have an API key from Audioscape.ai, enter that as the secret value.
+- If you already have an production API key from Audioscape.ai, enter that as the secret value.
 - If you do not have an API key, you can use this `mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4` default rate-limited secret provided by Audioscape.ai. 
 
 ### 6. Finalize the Setup
