@@ -38,3 +38,9 @@ This guide will walk you through the installation and setup of the Audioscape AI
 - Once the boombox loads up, you're all set!
 
 That's all there is to it—enjoy your new Audioscape experience!
+
+
+
+https://github.com/user-attachments/assets/acc032da-5d93-4be7-852c-81af32149a34
+
+
