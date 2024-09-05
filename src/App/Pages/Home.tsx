@@ -23,6 +23,89 @@ export class Home extends Component<HomeProps, HomeState> {
 		buttonText: "Add The AudioScape.ai Boombox",
 	};
 
+	componentDidMount() {
+		this.checkBoomboxStatus();
+	}
+
+	checkBoomboxStatus = () => {
+		const Boombox = ServerScriptService.FindFirstChild("AudioscapeBoomBox");
+		if (Boombox) {
+			const BoomboxVersion = Boombox.FindFirstChild("Version") as StringValue;
+			const AudioscapeBoomBoxVersion = AudioscapeBoomBox.FindFirstChild("Version") as StringValue;
+
+			if (BoomboxVersion && AudioscapeBoomBoxVersion) {
+				if (BoomboxVersion.Value < AudioscapeBoomBoxVersion.Value) {
+					this.setState({ buttonText: "Update AudioScape.ai Boombox" });
+				} else {
+					this.setState({ buttonText: "AudioScape.ai Boombox is up to date" });
+				}
+			}
+		}
+	};
+
+	handleActivated = () => {
+		const Boombox = ServerScriptService.FindFirstChild("AudioscapeBoomBox");
+		if (Boombox) {
+			this.updateBoombox(Boombox);
+		} else {
+			this.addNewBoombox();
+		}
+	};
+
+	updateBoombox = (Boombox: Instance) => {
+		this.setTemporaryButtonText("Find the AudioscapeBoomBox in ServerScriptService!");
+
+		const BoomboxVersion = Boombox.FindFirstChild("Version") as StringValue;
+		const LastApiKey = Boombox.FindFirstChild("Developer_API_Key") as StringValue;
+
+		const AudioscapeBoomBoxVersion = AudioscapeBoomBox.FindFirstChild("Version") as StringValue;
+
+		if (BoomboxVersion && AudioscapeBoomBoxVersion) {
+			if (BoomboxVersion.Value < AudioscapeBoomBoxVersion.Value) {
+				this.replaceBoombox(Boombox, LastApiKey?.Value);
+			} else {
+				this.setTemporaryButtonText("AudioscapeBoomBox is up to date.");
+			}
+		}
+	};
+
+	replaceBoombox = (oldBoombox: Instance, LastApiKey: string) => {
+		print("A newer version of AudioscapeBoomBox is available.");
+		oldBoombox.Destroy();
+		const newBoombox = AudioscapeBoomBox.Clone();
+		newBoombox.Parent = ServerScriptService;
+
+		const apiKeyValue = newBoombox.FindFirstChild("Developer_API_Key") as StringValue;
+		if (apiKeyValue) {
+			apiKeyValue.Value = LastApiKey !== undefined ? LastApiKey : apiKeyValue.Value;
+		}
+
+		this.enableServerScript(newBoombox);
+		this.setTemporaryButtonText("AudioscapeBoomBox updated!");
+	};
+
+	addNewBoombox = () => {
+		const newBoombox = AudioscapeBoomBox.Clone();
+		newBoombox.Parent = ServerScriptService;
+
+		this.enableServerScript(newBoombox);
+		this.setTemporaryButtonText("Find the AudioscapeBoomBox in ServerScriptService!");
+	};
+
+	enableServerScript = (boombox: Instance) => {
+		const ServerScript = boombox.FindFirstChild("Server") as Script;
+		if (ServerScript) {
+			ServerScript.Enabled = true;
+		}
+	};
+
+	setTemporaryButtonText = (text: string) => {
+		this.setState({ buttonText: text });
+		task.delay(3, () => {
+			this.checkBoomboxStatus();
+		});
+	};
+
 	render() {
 		return (
 			<textbutton
@@ -45,30 +128,7 @@ export class Home extends Component<HomeProps, HomeState> {
 				Position={UDim2.fromScale(0.5, 0.5)}
 				Size={UDim2.fromScale(0.5, 0.5)}
 				Event={{
-					Activated: () => {
-						let Boombox = ServerScriptService.FindFirstChild("AudioscapeBoomBox");
-						if (Boombox) {
-							this.setState({ buttonText: "Find the AudioscapeBoomBox in ServerScriptService!" });
-							task.delay(3, () => {
-								this.setState({ buttonText: "Add The AudioScape.ai Boombox" });
-							});
-
-							return;
-						}
-
-						Boombox = AudioscapeBoomBox.Clone();
-						Boombox.Parent = ServerScriptService;
-
-						const ServerScript = Boombox.FindFirstChild("Server") as Script;
-						if (ServerScript) {
-							ServerScript.Enabled = true;
-						}
-
-						this.setState({ buttonText: "Find the AudioscapeBoomBox in ServerScriptService!" });
-						task.delay(3, () => {
-							this.setState({ buttonText: "Add The AudioScape.ai Boombox" });
-						});
-					},
+					Activated: this.handleActivated,
 				}}
 			>
 				<uicorner />

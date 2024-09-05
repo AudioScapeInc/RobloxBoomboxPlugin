@@ -4,7 +4,7 @@ import { App } from "./App";
 import { any } from "@rbxts/react/src/prop-types";
 
 const toolbar = plugin.CreateToolbar("Audioscape Boombox");
-const button = toolbar.CreateButton("Boombox", "", "");
+const button = toolbar.CreateButton("Boombox", "Toggle the Boombox Widget", "rbxassetid://127492159665541");
 
 const widgetInfo = new DockWidgetPluginGuiInfo(
 	Enum.InitialDockState.Float, // Widget will be initialized in floating panel
