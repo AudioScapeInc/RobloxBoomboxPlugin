@@ -1,4 +1,4 @@
-# Audioscape AI Boombox Installation Guide
+# Audioscape Boombox Installation Guide
 ![image](https://github.com/user-attachments/assets/5635347b-86fa-4630-8bdd-77639ce05811)
 
 This guide will walk you through the installation and setup of the Audioscape AI Boombox plugin within Roblox Studio.
