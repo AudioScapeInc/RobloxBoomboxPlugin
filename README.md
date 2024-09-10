@@ -29,11 +29,22 @@ https://github.com/user-attachments/assets/acc032da-5d93-4be7-852c-81af32149a34
 ![Screenshot 2024-09-05 at 2 35 34 PM](https://github.com/user-attachments/assets/686752a4-37df-4ec7-90d8-e8bfc3afce49)
 
 ### 3. Add Audioscape Boombox to Your Game
-- Once the plugin is open, add the Audioscape Boombox to your game. It should appear in your workspace.
+- Once the plugin is open, add the Audioscape Boombox to your game.
+
 ![Screenshot 2024-09-05 at 2 29 15 PM](https://github.com/user-attachments/assets/68a57060-9560-458f-9109-43cadc5a5bc8)
 
+- Roblox will ask you to confirm the Audioscape plugin can modify scripts 
+  ![Screenshot 2024-09-10 at 3 51 46 PM](https://github.com/user-attachments/assets/a5783170-e000-41c8-8a57-137fab2dee1a)
+
+- It should now appear in your workspace.
+
 ### 4. Configure API Key (Optional)
-- If you have an unique developer API key, input it in the provided field under `AudioscapeBoomBox.Developer_API_Key`. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key in development mode.
+- The Boombox will function properly without a custom key in development mode. However, in production the default key is rate limited.
+- If you want an unlimited key, you will need to contact us for a custom API key which you would install in this field `AudioscapeBoomBox.Developer_API_Key`.
+  
+  ![image](https://github.com/user-attachments/assets/22453109-feb1-4034-adc4-6fd2c5bce3e7)
+- And you would need to install a new secret (see below)
+
 
 ### 5. Publish Your Game (Optional, If not Published Already)
 - Go to **File** > **Publish to Roblox**.
