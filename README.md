@@ -88,7 +88,7 @@ https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 
   # FAQ
   1. The boombox doesn't work!
-     1. Check if you have configured the [API key](#Configure-API-Key) and [secret](#production-configuration) properly following the steps above.
+     1. Check if you have configured the [API key](#configure-api-key) and [secret](#production-configuration) properly following the steps above.
      2. Make sure you have an active internet connection, and that your speakers and game audio are enabled.
      3. If it still doesn't work, it could be that you hit the daily rate limit of 500 requests per day. If so, please allow 24h for it to restart. And, [contact us](https://discord.gg/MShtx9aaHh) for an unlimited API key. 
 
