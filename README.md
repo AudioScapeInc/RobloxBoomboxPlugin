@@ -40,8 +40,9 @@ https://github.com/user-attachments/assets/017b907f-243a-46f8-b5f8-90b94765c141
 - It should now appear in your workspace.
 
 ### 4. Configure API Key (Optional)
-- The Boombox will function properly without a custom key in development mode. However, in production the default key is rate limited.
+- The Boombox will function properly in Roblox Studio without a custom key in development mode. However, in production the default key is rate limited.
 - If you want an unlimited key, you will need to contact us for a custom API key which you would install in this field `AudioscapeBoomBox.Developer_API_Key`.
+  
   ![image](https://github.com/user-attachments/assets/22453109-feb1-4034-adc4-6fd2c5bce3e7)
 - And you would need to install a new secret (see below)
 
@@ -57,7 +58,7 @@ The Boombox uses an external song database to search for tracks, so you need to 
 - Click **Game Settings**.
 - In **Game Settings**, go to **Security** and do the following:
   - Enable **Allow HTTP Requests**.
-  - Enable **Allow Studio Access to API Services**.
+  - Enable **Enable Studio Access to API Services**.
 
 ### 7. Ready for Secret!
 - Once the boombox is working for you in development mode, you need to add an http secret to have it work in production. Read on!
@@ -73,6 +74,9 @@ https://github.com/user-attachments/assets/937cfb3a-1f95-4972-a86a-002a9a45971f
 ### 1. Open Your Game in Roblox
 - Go to the Roblox **Create** page and select the place where you want to add the Audioscape Boombox.
 - Click the three dots (`...`) in the top-right corner of the game's tile and select **Configure this Experience**.
+
+  ![ConfigureExperienceSecret](https://github.com/user-attachments/assets/8b2ef4b3-a4ee-4938-8463-75524178d1d1)
+
 
 ### 2. Navigate to Secrets
 - Once you're on the configuration page, look to the left-hand side and find the **Secrets** tab.
