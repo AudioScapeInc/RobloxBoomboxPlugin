@@ -1,40 +1,46 @@
-# Audioscape Boombox Installation Guide
-![image](https://github.com/user-attachments/assets/5635347b-86fa-4630-8bdd-77639ce05811)
+# Audioscape AI Boombox Installation Guide
 
-This guide will walk you through the installation and setup of the Audioscape AI Boombox plugin within Roblox Studio.
+This guide will walk you through the installation and setup of the Audioscape Boombox plugin within Roblox Studio. Need help? Reach out to us in our [developer discord](https://discord.gg/MShtx9aaHh).  
+
+## Table of Contents
+* [Prerequisites](#Prerequisites)
+* [Initial Installation](#initial-installation-and-setup)
+* [Production Configuration](#Production-Configuration)
 
 ## Prerequisites
 - Roblox Studio installed
-- [Audioscape.ai Boombox](https://create.roblox.com/store/asset/128208368873453/Audioscapeai-Boombox-Plugin). plugin installed
+- [Audioscape Boombox](https://create.roblox.com/store/asset/128208368873453/Audioscape-Boombox-Plugin) plugin installed
 
-## Steps
+# Initial Installation and Setup
+_Make sure your volume is up to hear the video_
 
 https://github.com/user-attachments/assets/acc032da-5d93-4be7-852c-81af32149a34
 
-
+## Text Instructions
 ### 1. Open Roblox Studio
 - Launch Roblox Studio.
 - Create a new game or open an existing one. For this example, you can start with a basic Baseplate template.
 
 ### 2. Access the Plugin
-- After opening the game, navigate to the plugins section where the Audioscape AI Boombox plugin is installed.
+- After opening the game, navigate to the plugins section where you installed the Audioscape Boombox plugin.
 - Open the plugin by clicking on it.
+
 ![Screenshot 2024-09-05 at 2 35 34 PM](https://github.com/user-attachments/assets/686752a4-37df-4ec7-90d8-e8bfc3afce49)
 
 ### 3. Add Audioscape Boombox to Your Game
-- Once the plugin is open, add the Audioscape AI Boombox to your game. It should appear in your workspace.
+- Once the plugin is open, add the Audioscape Boombox to your game. It should appear in your workspace.
 ![Screenshot 2024-09-05 at 2 29 15 PM](https://github.com/user-attachments/assets/68a57060-9560-458f-9109-43cadc5a5bc8)
 
-
 ### 4. Configure API Key (Optional)
-- If you have an unique developer API key, input it in the provided field under `AudioscapeBoomBox.Developer_API_Key`. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key.
+- If you have an unique developer API key, input it in the provided field under `AudioscapeBoomBox.Developer_API_Key`. If you do not have one, leave the default key as is. The Boombox will function properly without a custom key in development mode.
 
 ### 5. Publish Your Game (Optional, If not Published Already)
 - Go to **File** > **Publish to Roblox**.
-- Name your game
+- Name your game.
 - Wait for the game to publish successfully.
 
 ### 6. Adjust Game Settings
+The Boombox uses an external song database to search for tracks, so you need to enable HTTP requests.
 - After publishing, navigate to the **Home** tab in the top menu bar.
 - Click **Game Settings**.
 - In **Game Settings**, go to **Security** and do the following:
@@ -42,12 +48,11 @@ https://github.com/user-attachments/assets/acc032da-5d93-4be7-852c-81af32149a34
   - Enable **Allow Studio Access to API Services**.
 
 ### 7. Ready for Secret!
-- Once the boombox loads up!
+- Once the boombox is working for you in development mode, you need to add an http secret to have it work in production. Read on!
 
+# Production Configuration
 
-# Setting Up an HTTP Secret in Roblox for Audioscape Boombox
-
-Follow this guide to set up your own HTTP secret to integrate the Audioscape Boombox into your Roblox game.
+Set up your own HTTP secret to enable the Boombox to function in production in your game.
 
 ## Steps
 
@@ -82,6 +87,8 @@ https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 
 ### 7. You're All Set!
 - The HTTP secret is now successfully configured for your game. The Audioscape Boombox will be able to pull the API key and function correctly in your game.
+
+  Need help? Reach out to us in our [developer discord](https://discord.gg/MShtx9aaHh).  
 
 Enjoy using the Audioscape Boombox in your experience!
 
