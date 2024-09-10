@@ -15,7 +15,7 @@ This guide will walk you through the installation and setup of the [Audioscape B
 # Initial Installation and Setup
 _Make sure your volume is up to hear the video_
 
-https://github.com/user-attachments/assets/acc032da-5d93-4be7-852c-81af32149a34
+https://github.com/user-attachments/assets/017b907f-243a-46f8-b5f8-90b94765c141
 
 ## Text Instructions
 ### 1. Open Roblox Studio
@@ -68,7 +68,7 @@ Set up your own HTTP secret to enable the Boombox to function in production in y
 
 Developer Api Secret: `mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4`
 
-https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
+https://github.com/user-attachments/assets/937cfb3a-1f95-4972-a86a-002a9a45971f
 
 ### 1. Open Your Game in Roblox
 - Go to the Roblox **Create** page and select the place where you want to add the Audioscape Boombox.
