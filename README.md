@@ -6,6 +6,7 @@ This guide will walk you through the installation and setup of the Audioscape Bo
 * [Prerequisites](#Prerequisites)
 * [Initial Installation](#initial-installation-and-setup)
 * [Production Configuration](#Production-Configuration)
+* [FAQ](#faq) 
 
 ## Prerequisites
 - Roblox Studio installed
@@ -54,10 +55,7 @@ The Boombox uses an external song database to search for tracks, so you need to 
 
 Set up your own HTTP secret to enable the Boombox to function in production in your game.
 
-## Steps
-
-Developer Api Secret:
-`mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4`
+Developer Api Secret: `mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4`
 
 https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 
@@ -79,7 +77,7 @@ https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 - The name must be exactly as written above. If there are any discrepancies, the Boombox will not work.
 
 ### 5. Add the Secret Value
-- If you already have an production API key from Audioscape.ai, enter that as the secret value.
+- If you already have a production API key from Audioscape.ai, enter that as the secret value.
 - If you do not have an API key, you can use this `mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4` default rate-limited secret provided by Audioscape.ai. 
 
 ### 6. Finalize the Setup
@@ -87,6 +85,12 @@ https://github.com/user-attachments/assets/babe8544-1e8f-4eec-aa35-b3e2c6eab3a2
 
 ### 7. You're All Set!
 - The HTTP secret is now successfully configured for your game. The Audioscape Boombox will be able to pull the API key and function correctly in your game.
+
+  # FAQ
+  1. The boombox doesn't work!
+     1. Check if you have configured the [API key](#Configure-API-Key) and [secret](#production-configuration) properly following the steps above.
+     2. Make sure you have an active internet connection, and that your speakers and game audio are enabled.
+     3. If it still doesn't work, it could be that you hit the daily rate limit of 500 requests per day. If so, please allow 24h for it to restart. And, [contact us](https://discord.gg/MShtx9aaHh) for an unlimited API key. 
 
   Need help? Reach out to us in our [developer discord](https://discord.gg/MShtx9aaHh).  
 
