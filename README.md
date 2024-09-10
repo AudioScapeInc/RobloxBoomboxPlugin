@@ -72,14 +72,16 @@ Developer Api Secret: `mNyj8dItG0aSjEqYY2Bu085Vq27Qyf5E7eIW7oa4`
 https://github.com/user-attachments/assets/937cfb3a-1f95-4972-a86a-002a9a45971f
 
 ### 1. Open Your Game in Roblox
-- Go to the Roblox **Create** page and select the place where you want to add the Audioscape Boombox.
-- Click the three dots (`...`) in the top-right corner of the game's tile and select **Configure this Experience**.
+- Go to the **https://create.roblox.com** page with your experiences.
+- Click on the thumbnail of your experience with the Audioscape Boombox plugin and select "Manage Experience"
 
-  ![ConfigureExperienceSecret](https://github.com/user-attachments/assets/8b2ef4b3-a4ee-4938-8463-75524178d1d1)
-
+  ![Screenshot 2024-09-10 at 4 33 52 PM](https://github.com/user-attachments/assets/11a05556-4114-451a-ad3f-94efbe77fa79)    ![Screenshot 2024-09-10 at 4 36 11 PM](https://github.com/user-attachments/assets/422a2cce-107d-40c7-89ba-b6aef8d400b5)
 
 ### 2. Navigate to Secrets
 - Once you're on the configuration page, look to the left-hand side and find the **Secrets** tab.
+
+  ![Screenshot 2024-09-10 at 4 35 27 PM](https://github.com/user-attachments/assets/c601ab69-d5d3-4e61-884a-24e944ded009)
+
 - Click **Secrets** to open the settings page.
 
 ### 3. Create a New Secret
