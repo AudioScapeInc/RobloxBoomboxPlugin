@@ -6,7 +6,8 @@ This guide will walk you through the installation and setup of the [Audioscape B
 * [Prerequisites](#Prerequisites)
 * [Initial Installation](#initial-installation-and-setup)
 * [Production Configuration](#Production-Configuration)
-* [FAQ](#faq) 
+* [FAQ](#faq)
+* [Advanced Developer Controls](#Advanced-controls)
 
 ## Prerequisites
 - Roblox Studio installed
@@ -110,6 +111,9 @@ https://github.com/user-attachments/assets/937cfb3a-1f95-4972-a86a-002a9a45971f
      3. If it still doesn't work, it could be that you hit the daily rate limit of 500 requests per day. If so, please allow 24h for it to restart. And, [contact us](https://discord.gg/MShtx9aaHh) for an unlimited API key. 
 
   Need help? Reach out to us in our [developer discord](https://discord.gg/MShtx9aaHh).  
+
+# Advanced Controls
+There are a number of dev-configurable settings for volume, player location, accent colors, and pushing tracks to the player when you want. See our [advanced documentation](https://discord.gg/MShtx9aaHh) for more info.
 
 Enjoy using the Audioscape Boombox in your experience!
 
