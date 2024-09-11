@@ -113,7 +113,7 @@ https://github.com/user-attachments/assets/937cfb3a-1f95-4972-a86a-002a9a45971f
   Need help? Reach out to us in our [developer discord](https://discord.gg/MShtx9aaHh).  
 
 # Advanced Controls
-There are a number of dev-configurable settings for volume, player location, accent colors, and pushing tracks to the player when you want. See our [advanced documentation](https://discord.gg/MShtx9aaHh) for more info.
+There are a number of dev-configurable settings for volume, player location, accent colors, and pushing tracks to the player when you want. See our [advanced settings doc](AdvancedSettings.md) for more info.
 
 Enjoy using the Audioscape Boombox in your experience!
 
