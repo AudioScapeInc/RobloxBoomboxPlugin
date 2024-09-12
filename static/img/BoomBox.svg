@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 940.98 602.63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-1" d="m418.01,81.63c216,0,387-171,498-18s-184,539-184,539H114.01S-43.99,294.63,12.01,139.63s190-58,406-58Z"/>
+      <image width="431" height="474" transform="translate(218.01 128.63)" xlink:href="static/img/BoomboxIcon.png"/>
+    </g>
+  </g>
+</svg>
