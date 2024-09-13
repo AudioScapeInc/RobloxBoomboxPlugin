@@ -1,6 +1,6 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from 'prism-react-renderer'
+import type { Config } from '@docusaurus/types'
+import type * as Preset from '@docusaurus/preset-classic'
 
 const config: Config = {
   title: 'Audioscape.ai Boombox',
@@ -8,15 +8,15 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://audioscape.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/RobloxBoomboxPlugin/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'AudioScapeInc', // Usually your GitHub org/user name.
+  projectName: 'RobloxBoomboxPlugin', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -36,9 +36,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -98,7 +95,7 @@ const config: Config = {
               href: 'https://twitter.com/docusaurus',
             },
           ],
-        }
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
@@ -107,6 +104,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-};
+}
 
-export default config;
+export default config
