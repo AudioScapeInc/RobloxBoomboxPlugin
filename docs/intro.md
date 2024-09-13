@@ -31,8 +31,7 @@ sidebar_position: 1
 
 No more entering IDs! Easily search and browse through tracks.
 
-![Search and Browse](https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/0/6/6/a/066ae850726a0447a5d133f64b2c1966c1484e86.jpeg)
-
+![Screenshot 2024-09-11 at 4 27 54 PM](https://github.com/user-attachments/assets/46f931d2-f126-4aa6-9320-b2a6f553ca33)
 
 ## Demo Video
 
