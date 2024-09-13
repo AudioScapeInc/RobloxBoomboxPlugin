@@ -4,9 +4,8 @@ sidebar_position: 1
 
 # Intro
 
-## Enhance Your Roblox Experience with Audioscape Boombox
+## Help players find your experience more engaging with Audioscape’s free drop-in boombox !
 
-Would your players enjoy a music player that can search and play all the free music tracks available on Roblox, including the latest tracks from Distrokid announced at RDC24? Look no further!
 
 
 <div align="center">
@@ -25,6 +24,9 @@ Would your players enjoy a music player that can search and play all the free mu
 - **Favorite Tracks:** Save your favorite tracks to your queue.
 - **Re-order Queue:** Customize the order of your playlist.
 - **Minimize Player:** Maximize screen space by minimizing the player.
+
+![Screenshot 2024-09-11 at 4 27 45 PM](https://github.com/user-attachments/assets/3d5af26f-9dea-4af0-bffb-2dbdff65f2ac)
+
 ### Real Search and Browsing
 
 No more entering IDs! Easily search and browse through tracks.
@@ -34,12 +36,12 @@ No more entering IDs! Easily search and browse through tracks.
 
 ## Demo Video
 
-Watch our demo video to see the Audioscape Boombox in action!
+See in in action! (Turn on your volume)
 
-<!-- <a href="https://www.youtube.com/watch?v=V7VZDz2dUtY">
-    <img src="upload://heFNkNZ8iPiaz0IrNaQOy6P92hH.jpeg" alt="YouTube Video" width="483" height="272"/></a> -->
+https://github.com/user-attachments/assets/8364a008-6704-42a3-a073-571a81d6d24f
 
-<iframe width="483" height="272" src="https://www.youtube.com/embed/V7VZDz2dUtY" title="Audioscape&#39;s Free Roblox Boombox Plugin #Robloxdev #roblox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+## Try it out in-game
+Try it out in our [demo game](https://create.roblox.com/dashboard/creations/experiences/6474268741/overview).
 
 ## Why We Built It
 
@@ -57,7 +59,7 @@ We have a ton of features planned for the boombox, like extending the playlist f
 - **Pre-seed Queue:** Push your own audio selections to the player.
 - **Change Accent Colors:** Customize the player's appearance.
 
-Try it out in our [demo game](https://create.roblox.com/dashboard/creations/experiences/6474268741/overview).
+
 
 ## [Installation Instructions](/docs/tutorial-basics/installation-guide)
 
