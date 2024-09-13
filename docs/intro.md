@@ -43,7 +43,12 @@ Watch our demo video to see the Audioscape Boombox in action!
 
 ## Why We Built It
 
-We aim to help developers create amazing audio experiences in Roblox. Our new [developer tool for audio search](https://portal.audioscape.ai) has been integrated into this free boombox plugin.
+Audioscape is a small team of developers, sound designers, and composers. We are passionate about raising the bar for audio quality on Roblox. We built a [developer tool for audio search](https://portal.audioscape.ai) , and once we got search working properly there, we thought it would be cool to make it available in a free boombox plugin for music listening. We were surprised at the number of good music tracks available for free on Roblox.
+
+## Why did we release it as a plugin and not a RBXM?
+
+We have a ton of features planned for the boombox, like extending the playlist functionality, a physical boombox, and better search (along with what you all suggest). We felt that a plugin would allow us to iterate faster and push updates out smoother (instead of having to bother devs to manually update their modules), and therefore enable a better experience.
+
 
 ## Custom Controls for Developers
 
