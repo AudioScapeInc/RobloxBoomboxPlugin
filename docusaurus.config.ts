@@ -50,7 +50,7 @@ const config: Config = {
     navbar: {
       title: 'Audioscape.ai Boombox',
       logo: {
-        alt: 'Audioscape.ai  Logo',
+        alt: 'Audioscape.ai Logo',
         src: 'img/audioscape-icon.png',
       },
       items: [
@@ -61,7 +61,7 @@ const config: Config = {
           label: 'Guides',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/AudioScapeInc/RobloxBoomboxPlugin',
           label: 'GitHub',
           position: 'right',
         },
@@ -83,21 +83,29 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Discord',
+              href: 'https://discord.gg/MShtx9aaHh',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'YouTube',
+              href: 'https://www.youtube.com/channel/UCTRM6f4vFy1Yek1qrfBLxrA',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://x.com/audioscapeinc',
+            },
+            {
+              label: 'Audioscape.ai',
+              href: 'https://audioscape.ai',
+            },
+            {
+              label: 'Audio Discovery Tool',
+              href: 'https://portal.audioscape.ai',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} AudioScape. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
