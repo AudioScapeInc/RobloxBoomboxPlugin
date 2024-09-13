@@ -8,11 +8,11 @@ Welcome to the installation guide for the [Audioscape Boombox plugin](https://cr
 
 ## Table of Contents
 
-- [Prerequisites](#prerequisites)
-- [Initial Installation and Setup](#initial-installation-and-setup)
-- [Production Configuration](#production-configuration)
-- [FAQ](#faq)
-- [Advanced Developer Controls](#advanced-developer-controls)
+- [Installation Guide](#installation-guide)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Initial Installation and Setup](#initial-installation-and-setup)
+    - [Text Instructions](#text-instructions)
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ _Make sure your volume is up to hear the video_
    - Navigate to the plugins section where you installed the Audioscape Boombox plugin.
    - Open the plugin by clicking on it.
 
-     ![Access Plugin](https://cdn.discordapp.com/attachments/1164647897799852135/1283812038342086808/686752a4-37df-4ec7-90d8-e8bfc3afce49.png?ex=66e45aa2&is=66e30922&hm=f1d4618da7ad2221a0c8f744ede3a3754b540f470efc622a396c7f46b4d9f180&)
+     ![Access Plugin](https://cdn.discordapp.com/attachments/1224868487600799825/1284210985522954240/686752a4-37df-4ec7-90d8-e8bfc3afce49.png?ex=66e5ce2e&is=66e47cae&hm=cca67f27d9f338c75e85141ad55aec7a9d4e4614b01b44641587cdc63ae82cad&)
 
 3. **Add Audioscape Boombox to Your Game**
 

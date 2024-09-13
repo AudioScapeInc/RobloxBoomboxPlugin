@@ -8,21 +8,15 @@ sidebar_position: 1
 
 Would your players enjoy a music player that can search and play all the free music tracks available on Roblox, including the latest tracks from Distrokid announced at RDC24? Look no further!
 
-![Audioscape Boombox](upload://ULUBIgqltLSC6iZc1ikvX4FE6q.jpeg)
-
-### Real Search and Browsing
-
-No more entering IDs! Easily search and browse through tracks.
-
-![Search and Browse](upload://gg2aKhJjtr4bxUB85f4ZqI9AdQH.jpeg)
 
 <div align="center">
  <a href="https://create.roblox.com/store/asset/128208368873453/Audioscape-Boombox-Plugin?keyword=boombox&pageNumber=1&pagePosition=0">
-    <img src="static/img/audioscape-icon.png" alt="Plugin Icon" width="200" height="200"/></a>
+    <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/0/5/e/f/05ef25c83f364e5e0c5d03bd4bb6bda7b9204c82.jpeg" alt="Plugin Icon" width="200" height="200"/></a>
 
 [Plugin Page](https://create.roblox.com/store/asset/128208368873453/Audioscape-Boombox-Plugin?keyword=boombox&pageNumber=1&pagePosition=0) | [Demo Game](https://create.roblox.com/dashboard/creations/experiences/6474268741/overview) | [Dev Support Discord](https://discord.gg/kVujTS7FP3)
 
 </div>
+
 
 ## Features
 
@@ -31,6 +25,12 @@ No more entering IDs! Easily search and browse through tracks.
 - **Favorite Tracks:** Save your favorite tracks to your queue.
 - **Re-order Queue:** Customize the order of your playlist.
 - **Minimize Player:** Maximize screen space by minimizing the player.
+### Real Search and Browsing
+
+No more entering IDs! Easily search and browse through tracks.
+
+![Search and Browse](https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/5X/0/6/6/a/066ae850726a0447a5d133f64b2c1966c1484e86.jpeg)
+
 
 ## Demo Video
 
