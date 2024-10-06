@@ -63,7 +63,7 @@ We have a ton of features planned for the boombox, like extending the playlist f
 ## [Installation Instructions](/docs/tutorial-basics/installation-guide)
 
 1. [Download the plugin](https://create.roblox.com/store/asset/128208368873453/Audioscape-Boombox-Plugin?keyword=boombox&pageNumber=1&pagePosition=0).
-2. Follow [the instructions on our GitHub](https://github.com/AudioScapeInc/RobloxBoomboxPlugin/) for the initial setup.
+2. Follow [the instructions on our GitHub](https://audioscapeinc.github.io/RobloxBoomboxPlugin/docs/tutorial-basics/installation-guide) for the initial setup.
 3. Refer to the bottom of the doc for advanced configurations.
 
 ## Feedback
