@@ -85,3 +85,42 @@ BoomBox:AdjustMaxVolume({
     MaxVolume = 1
 })
 ```
+### 5. SyncToBeat
+This method allows syncing graphic elements to the beat of the music. The BPM and beat locations are returned from the Audioscape server. 
+
+
+```lua
+function BoomBoxClient:SyncToBeat(Callback: (Beat: number, BeatDuration: number) -> nil)
+    self.Scheduler.Connections[HttpService:GenerateGUID(false)] = BeatSync.BeatChanged.Event:Connect(Callback)
+end
+
+function BoomBoxClient:SyncToSixteenthNote(Callback: (SixteenthNote: number, NoteDuration: number) -> nil)
+    self.Scheduler.Connections[HttpService:GenerateGUID(false)] = BeatSync.SixteenthNoteChanged.Event:Connect(Callback)
+end
+```
+
+#### Example Usage:
+
+```lua
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local BoomBoxClient =
+    require(Players.LocalPlayer.PlayerGui:WaitForChild("BoomBoxClient")) :: typeof(require(game.ServerScriptService.BoomBox.Client))
+
+
+local Brick = Instance.new("Part")
+Brick.Position = Vector3.new(0, 15, 0)
+Brick.Anchored = true
+Brick.Size = Vector3.one * 10
+Brick.CFrame = CFrame.new(0, 15, 0)
+Brick.Parent = workspace
+
+BoomBoxClient:SyncToBeat(function(beat)
+    print(beat, beat % 2)
+    if beat % 2 == 0 then
+        Brick.Material = Enum.Material.Neon
+    else
+        Brick.Material = Enum.Material.Plastic
+    end
+end)
+```
