@@ -1,9 +1,9 @@
 ---
 sidebar_position: 3
 ---
-# BoomBoxClient
+# BoomBox Client
 
-# BoomBoxClient Documentation
+## BoomBoxClient Documentation
 
 ## Overview
 BoomBoxClient is a singleton module responsible for controlling music playback in a Roblox game. It provides various methods for syncing audio, interacting with music genres and stations, and controlling the audio player's behavior, such as play, skip, rewind, and volume adjustments.
@@ -16,7 +16,8 @@ local BoomBoxClient = require(Players.LocalPlayer.PlayerGui:WaitForChild("BoomBo
 
 ## Methods
 
-### `SyncToBeat(Callback: (Beat: number, BeatDuration: number) -> nil)`
+## SyncToBeat
+`SyncToBeat(Callback: (Beat: number, BeatDuration: number) -> nil)`
 Syncs a callback function to the beat of the current sound. This callback is triggered every time a beat occurs in the audio.
 
 #### Parameters:
@@ -30,8 +31,8 @@ end)
 ```
 
 ---
-
-### `SyncToSixteenthNote(Callback: (SixteenthNote: number, NoteDuration: number) -> nil)`
+## SyncToSixteenthNote
+`SyncToSixteenthNote(Callback: (SixteenthNote: number, NoteDuration: number) -> nil)`
 Syncs a callback function to the sixteenth note of the current sound. This callback is triggered every time a sixteenth note is played.
 
 #### Parameters:
@@ -46,7 +47,8 @@ end)
 
 ---
 
-### `SyncToDownBeat(Callback: (Beat: number) -> nil)`
+## SyncToDownBeat
+`SyncToDownBeat(Callback: (Beat: number) -> nil)`
 Syncs a callback function to the downbeat of the current sound.
 
 #### Parameters:
@@ -61,7 +63,8 @@ end)
 
 ---
 
-### `GetGenres() -> {string}`
+## GetGenres
+`GetGenres() -> {string}`
 Retrieves the available genres from the system after ensuring that the genres are loaded. The genres are matched against a predefined list in `GenreBoxText`.
 
 #### Returns:
@@ -77,7 +80,8 @@ end
 
 ---
 
-### `GetStations() -> {string}`
+## GetStations
+`GetStations() -> {string}`
 Retrieves the available stations, excluding those that are part of the predefined `GenreBoxText`. The stations are retrieved after ensuring that the system is fully loaded.
 
 #### Returns:
@@ -93,7 +97,8 @@ end
 
 ---
 
-### `PlayGenre(Genre: string)`
+## PlayGenre
+`PlayGenre(Genre: string)`
 Plays music from the specified genre.
 
 #### Parameters:
@@ -106,7 +111,8 @@ BoomBoxClient:PlayGenre("Trap")
 
 ---
 
-### `PlayStation(Station: string)`
+## PlayStation
+`PlayStation(Station: string)`
 Plays music from the specified station.
 
 #### Parameters:
@@ -119,7 +125,8 @@ BoomBoxClient:PlayStation("Lo-fi Station")
 
 ---
 
-### `TogglePlay()`
+## TogglePlay
+`TogglePlay()`
 Toggles between play and pause for the current song.
 
 #### Example:
@@ -129,7 +136,8 @@ BoomBoxClient:TogglePlay()
 
 ---
 
-### `Skip()`
+## Skip
+`Skip()`
 Skips to the next track in the current playlist or station.
 
 #### Example:
@@ -139,7 +147,8 @@ BoomBoxClient:Skip()
 
 ---
 
-### `Rewind()`
+## Rewind
+`Rewind()`
 Rewinds to the previous track in the current playlist or station.
 
 #### Example:
@@ -149,7 +158,8 @@ BoomBoxClient:Rewind()
 
 ---
 
-### `Volume(number: number)`
+## Volume
+`Volume(number: number)`
 Sets the volume for the audio player. The volume is clamped to the maximum allowable volume.
 
 #### Parameters:
@@ -162,7 +172,8 @@ BoomBoxClient:Volume(5)
 
 ---
 
-### `MaxVolume(number: number)`
+## MaxVolume
+`MaxVolume(number: number)`
 Sets the maximum volume for the audio player.
 
 #### Parameters:
@@ -175,7 +186,8 @@ BoomBoxClient:MaxVolume(10)
 
 ---
 
-### `SetExcludedStations(ExcludedStations: {string})`
+## SetExcludedStations
+`SetExcludedStations(ExcludedStations: {string})`
 Excludes certain stations from being played.
 
 #### Parameters:
@@ -188,7 +200,8 @@ BoomBoxClient:SetExcludedStations({"Jazz", "Classical"})
 
 ---
 
-### `SetPlayerVisible(PlayerVisible: boolean)`
+## SetPlayerVisible
+`SetPlayerVisible(PlayerVisible: boolean)`
 Sets the visibility of the audio player UI.
 
 #### Parameters:
@@ -199,6 +212,3 @@ Sets the visibility of the audio player UI.
 BoomBoxClient:SetPlayerVisible(true)
 ```
 
----
-
-This documentation provides a comprehensive guide on how to use the primary methods in `BoomBoxClient` for syncing audio, controlling playback, and managing stations and genres.

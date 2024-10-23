@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 ---
-# BoomBoxServer
+# BoomBox Server
 
 ## Overview
 The Audioscape Boombox Plugin allows various developer customizations for setting the location of the player in the game, whether it starts in a minimized state, whether it autoplays music, volume controls, and accent colors. 
@@ -29,7 +29,8 @@ The BoomBox module uses the following properties, which can be configured:
 
 ## Methods
 
-### 1. `BoomBox:RestructureFromRobloxMetaData(Songs: { RobloxAudioMetadata })`
+## RestructureFromRobloxMetaData
+`BoomBox:RestructureFromRobloxMetaData(Songs: { RobloxAudioMetadata })`
 This method restructures the audio metadata obtained from Roblox into a custom format suitable for the boombox system.
 
 #### Parameters:
@@ -43,7 +44,9 @@ This method restructures the audio metadata obtained from Roblox into a custom f
 local restructuredData = BoomBox:RestructureFromRobloxMetaData(SongMetadata)
 ```
 
-### 2. `BoomBox:PushToQueue(Info: { Players: { Player }?, AssetIDs: { number }, PlayNow: boolean, ClearQueue: boolean, Fade: number? })`
+---
+## PushToQueue
+`BoomBox:PushToQueue(Info: { Players: { Player }?, AssetIDs: { number }, PlayNow: boolean, ClearQueue: boolean, Fade: number? })`
 This method pushes songs to the play queue of specified players. It can either play the song immediately, clear the existing queue, or both, depending on the provided options.
 
 #### Parameters:
@@ -65,7 +68,9 @@ BoomBox:PushToQueue({
 })
 ```
 
-### 3. `BoomBox:AdjustVolume(Info: { Players: { Player }?, Volume: number })`
+---
+## AdjustVolume
+`BoomBox:AdjustVolume(Info: { Players: { Player }?, Volume: number })`
 This method adjusts the volume for specific players or all players in the game.
 
 #### Parameters:
@@ -81,7 +86,9 @@ BoomBox:AdjustVolume({
 })
 ```
 
-### 4. `BoomBox:AdjustMaxVolume(Info: { Players: { Player }?, MaxVolume: number })`
+---
+## AdjustMaxVolume
+`BoomBox:AdjustMaxVolume(Info: { Players: { Player }?, MaxVolume: number })`
 This method adjusts the maximum volume limit for specific players or all players in the game.
 
 #### Parameters:
