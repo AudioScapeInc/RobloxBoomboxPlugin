@@ -16,7 +16,7 @@ local BoomBoxServer = require(ServerScriptService:WaitForChild("AudioscapeBoomBo
 ```
 
 
-## Properties
+## Advanced Settings
 
 The BoomBox module uses the following properties, which can be configured:
 

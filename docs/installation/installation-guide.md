@@ -73,5 +73,5 @@ _Make sure your volume is up to hear the video_
      - Enable **Allow HTTP Requests**.
      - Enable **Enable Studio Access to API Services**.
 
-7. **Ready for [Secret!](/docs/tutorial-basics/secret-setup)**
+7. **Ready for setting up your [Secret!](/docs/installation/production-configuration)**
    - Once the boombox is working for you in development mode, you need to add an HTTP secret to have it work in production. Read on!
