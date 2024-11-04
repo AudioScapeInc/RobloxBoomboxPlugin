@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Production Configuration
@@ -59,7 +59,7 @@ You will need to set up your own secret to enable the Boombox to function in pro
 ## FAQ
 
 1. **The boombox doesn't work!**
-   - Check if you have configured the [API key](/docs/installation/production-configuration) and [secret](#production-configuration) properly following the steps above.
+   - Check if you have configured the [API key](/docs/production-configuration) and [secret](#production-configuration) properly following the steps above.
    - Make sure you have an active internet connection, and that your speakers and game audio are enabled.
    - If it still doesn't work, it could be that you hit the daily rate limit of 500 requests per day. If so, please allow 24 hours for it to restart. And, [contact us](https://discord.gg/MShtx9aaHh) for an unlimited API key.
 

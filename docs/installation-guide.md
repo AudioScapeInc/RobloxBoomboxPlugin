@@ -1,14 +1,14 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Installation Guide
+# Installation
 
 Welcome to the installation guide for the [Audioscape Boombox plugin](https://create.roblox.com/store/asset/128208368873453/Audioscape-Boombox-Plugin?keyword=boombox&pageNumber=1&pagePosition=0) within Roblox Studio. Need help? Reach out to us in our [developer discord](https://discord.gg/MShtx9aaHh).
 
 ## Table of Contents
 
-- [Installation Guide](#installation-guide)
+- [Installation](#installation)
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Initial Installation and Setup](#initial-installation-and-setup)
@@ -73,5 +73,5 @@ _Make sure your volume is up to hear the video_
      - Enable **Allow HTTP Requests**.
      - Enable **Enable Studio Access to API Services**.
 
-7. **Ready for setting up your [Secret!](/docs/installation/production-configuration)**
+7. **Ready for setting up your [Secret!](/docs/production-configuration)**
    - Once the boombox is working for you in development mode, you need to add an HTTP secret to have it work in production. Read on!
