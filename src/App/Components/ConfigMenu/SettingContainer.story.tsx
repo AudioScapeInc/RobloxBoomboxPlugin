@@ -1,8 +1,7 @@
 import React from "@rbxts/react";
 import ReactRoblox from "@rbxts/react-roblox";
 import type { InferProps } from "@rbxts/ui-labs/src/Typing/Typing";
-
-import { Home } from "./Home";
+import SettingContainer from "./SettingContainer";
 
 const controls = {
 	Visible: true,
@@ -13,7 +12,14 @@ const story = {
 	reactRoblox: ReactRoblox,
 	controls: controls,
 	story: (props: InferProps<typeof controls>) => {
-		const component = <Home buttonText="Add The AudioScape.ai Boombox" />;
+		const component = (
+			<SettingContainer
+				valueLabel="Test"
+				initialValue={true}
+				bounds={new Vector2(1, 1)}
+				valueChanged={(newValue) => {}}
+			/>
+		);
 		return component;
 	},
 };

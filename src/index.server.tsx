@@ -2,6 +2,8 @@ import { createPortal, createRoot } from "@rbxts/react-roblox";
 import React, { StrictMode } from "@rbxts/react";
 import { App } from "./App";
 import { any } from "@rbxts/react/src/prop-types";
+import { ReflexProvider } from "@rbxts/react-reflex";
+import { store } from "App/Stores";
 
 const toolbar = plugin.CreateToolbar("Audioscape Boombox");
 const button = toolbar.CreateButton("Boombox", "Toggle the Boombox Widget", "rbxassetid://127492159665541");
@@ -21,7 +23,16 @@ const widgetInfo = new DockWidgetPluginGuiInfo(
 const BoomboxWidget = plugin.CreateDockWidgetPluginGui("BoomboxWidget", widgetInfo);
 
 const root = createRoot(new Instance("Folder"));
-root.render(<StrictMode>{createPortal(<App />, BoomboxWidget)}</StrictMode>);
+root.render(
+	<StrictMode>
+		{createPortal(
+			<ReflexProvider producer={store}>
+				<App />
+			</ReflexProvider>,
+			BoomboxWidget,
+		)}
+	</StrictMode>,
+);
 
 button.Click.Connect(() => {
 	BoomboxWidget.Enabled = !BoomboxWidget.Enabled;

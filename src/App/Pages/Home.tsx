@@ -8,18 +8,16 @@ const Core = App.WaitForChild("Core") as Folder;
 const AudioscapeBoomBox = Core.WaitForChild("AudioscapeBoomBox") as ModuleScript;
 
 interface HomeProps {
-	initialCount: number;
+	buttonText: string;
 }
 
 interface HomeState {
-	count: number;
 	buttonText: string;
 }
 
 @ReactComponent
 export class Home extends Component<HomeProps, HomeState> {
 	state: HomeState = {
-		count: this.props.initialCount,
 		buttonText: "Add The AudioScape.ai Boombox",
 	};
 
