@@ -136,6 +136,39 @@ BoomBoxClient:TogglePlay()
 
 ---
 
+## ListenToSong
+`ListenToSong(Callback: (Song: {asset_name: string} | nil) -> nil)`
+Listens to the current song and triggers a callback function with the song name.
+
+#### Parameters:
+- `Callback`: A function that receives one parameter: `Song` (the current song).
+
+#### Example:
+```lua
+BoomBoxClient:ListenToSong(function(Song)
+    if not Song then return end
+    print("Current Song:", Song.asset_name)
+end)
+```
+
+---
+
+## ListenToPlayToggle
+`ListenToPlayToggle(Callback: (IsPlaying: boolean) -> nil)`
+Listens to the play toggle and triggers a callback function with the current play state.
+
+#### Parameters:
+- `Callback`: A function that receives one parameter: `IsPlaying` (the current play state).
+
+#### Example:
+```lua
+BoomBoxClient:ListenToPlayToggle(function(IsPlaying)
+    print("Is Playing:", IsPlaying)
+end)
+```
+
+---
+
 ## Skip
 `Skip()`
 Skips to the next track in the current playlist or station.
