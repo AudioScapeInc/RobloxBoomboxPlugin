@@ -45,7 +45,7 @@ _Make sure your volume is up to hear the video_
 
      ![Add Boombox](https://cdn.discordapp.com/attachments/1164647897799852135/1283812053819195523/68a57060-9560-458f-9109-43cadc5a5bc8.png?ex=66e45aa5&is=66e30925&hm=4f425f18d78a633e1258e40127708a16f95e2af3c4ff1f55696f8410fd25c7da&)
 
-   - Roblox will ask you to confirm the Audioscape plugin can modify scripts.
+   - Roblox will ask you to confirm the Audioscape plugin can modify scripts. Click **Allow**.
 
      ![Confirm Modification](https://github.com/user-attachments/assets/a5783170-e000-41c8-8a57-137fab2dee1a)
 
